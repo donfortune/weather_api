@@ -10,7 +10,7 @@ request_url = f"{URL}?appid={API_KEY}&q={city}"
 response = requests.get(request_url)
 content = response.json()
 
-if response.status_code == 200:
+if response.status_code == 200: #200 represents a successful run
     print('all good to go')
 else:
     print('theres an error')
